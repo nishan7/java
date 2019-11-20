@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Program 7b</title>
+</head>
+<script type="text/javascript">
+	function validate() {
+		if (document.form1.f1.value == "")
+			alert("First click on browse and select the file");
+		else
+			document.from1.submit();
+	}
+</script>
+<body bgcolor="lightblue">
+	<form name="form1" method="get"
+		action="http://localhost:8443/ser/Servlet7b">
+		<p>
+		<center>
+			<br />
+			<h1>File Download Program</h1>
+			<br />
+			<h3>Click on browse and select the file</h3>
+			<br /> <input type="file" name="f1"> <br /> <br /> <input
+				type="submit" value="Click to start downloading"
+				onclick="validate()">
+		</center>
+		</p>
+	</form>
+</body>
+</html>
